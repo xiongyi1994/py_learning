@@ -35,9 +35,27 @@ conn.set("incr_ex_string_2", "a")
 
 # incrby
 conn.set("incrby_ex",1)
-print conn.incrby("incrby_ex",2) # -> 3
+conn.incrby("incrby_ex",2) # -> 3
 
 # decrby
 # same as incrby
 
 # incrbyfloat
+
+# append
+conn.set("append_ex", "xiong")
+conn.append("append_ex", "yi") # => xiongyi
+
+# getrange
+conn.set("getrange_ex", "012345")
+conn.getrange("getrange_ex", 0, -1) # => 012345
+
+# setrange
+
+# getbit
+
+# setbit
+
+# bitcount
+
+# bitop
